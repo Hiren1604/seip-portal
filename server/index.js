@@ -54,6 +54,9 @@ app.use(express.json());
 const mentorsRouter = require('./routes/mentors');
 app.use('/api/mentors', mentorsRouter);
 
+const aiInsightsRouter = require('./routes/aiInsights');
+app.use('/api/ai-insights', aiInsightsRouter);
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', firebase: firebaseInitialized, timestamp: new Date().toISOString() });

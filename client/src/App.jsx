@@ -18,6 +18,7 @@ import Compliance from './pages/Compliance';
 import Resources from './pages/Resources';
 import Messages from './pages/Messages';
 import Settings from './pages/Settings';
+import AIReport from './pages/AIReport';
 
 // Investor
 import InvestorDashboard from './pages/InvestorDashboard';
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/founder/resources" element={<FounderRoute><Layout><Resources /></Layout></FounderRoute>} />
           <Route path="/founder/messages" element={<FounderRoute><Layout><Messages /></Layout></FounderRoute>} />
           <Route path="/founder/settings" element={<FounderRoute><Layout><Settings /></Layout></FounderRoute>} />
+          <Route path="/founder/ai-report" element={<FounderRoute><Layout><AIReport /></Layout></FounderRoute>} />
 
           {/* INVESTOR ROUTES */}
           <Route path="/investor/dashboard" element={<InvestorRoute><Layout><InvestorDashboard /></Layout></InvestorRoute>} />

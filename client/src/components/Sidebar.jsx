@@ -2,7 +2,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import {
   Rocket, LayoutDashboard, UserCheck, Users, FlaskConical,
   BarChart3, ShieldCheck, BookOpen, MessageSquare, Settings,
-  Headphones, ChevronRight, Search, Briefcase
+  Headphones, ChevronRight, Search, Briefcase, Sparkles
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
@@ -10,6 +10,7 @@ const sidebarConfig = {
   founder: [
     { label: 'Dashboard',    icon: LayoutDashboard, path: '/founder/dashboard' },
     { label: 'My Startup',   icon: UserCheck,       path: '/founder/onboarding' },
+    { label: 'AI Report',    icon: Sparkles,        path: '/founder/ai-report' },
     { label: 'Mentorship',   icon: Users,           path: '/founder/mentorship' },
     { label: 'Sandbox',      icon: FlaskConical,    path: '/founder/sandbox' },
     { label: 'Performance',  icon: BarChart3,       path: '/founder/performance' },
